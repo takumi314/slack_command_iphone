@@ -10,7 +10,7 @@ function promptForMessage() {
  */
 function doPost(e) {
   var verificationToken = e.parameter.token;
-  if (verificationToken != 'OMFEGCneYulhdHfsa9AdUIev') { // AppのVerification Tokenを入れる
+  if (verificationToken != '') { // AppのVerification Tokenを入れる
      throw new Error('Invalid token');
   }
   
